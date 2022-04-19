@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="Alura/Java_Basico/JREeJDK/sintaxe-basica/src"/>
+	<classpathentry kind="src" path="Alura/Java_Basico/JREeJDK/sintaxe-variaveis-e-fluxo/src"/>
+	<classpathentry kind="src" path="Alura/Java_Basico/POO/bytebank/src"/>
+	<classpathentry kind="output" path="Alura/Java_Basico/JREeJDK/sintaxe-basica/bin"/>
+</classpath>
