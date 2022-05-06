@@ -2,11 +2,11 @@ public class Funcionario {
 	// Atributos
 	private String nome;
 	private String cpf;
-	protected double salario;
+	private double salario;
 
 	// Métodos
 	public double getBonificacao() {
-		return this.salario + salario * 0.1;
+		return this.salario ;
 	}
 
 	// Getters and Setters

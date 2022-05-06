@@ -16,7 +16,7 @@ public class TesteGerente {
 		gerente.setSenha(12345);
 		boolean autenticou = gerente.autentica(12345);
 
-		System.out.println(autenticou);
+		System.out.println("Deu certo? = " + autenticou);
 		
 		System.out.println(gerente.getBonificacao());
 

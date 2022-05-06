@@ -17,7 +17,8 @@ public class Gerente extends Funcionario {
 	}
 	
 	public double getBonificacao() {
-		return super.salario + salario * 0.25;
+		System.out.println("Chama o método do Gerente");
+		return super.getBonificacao() + 150;
 	}
 
 }
