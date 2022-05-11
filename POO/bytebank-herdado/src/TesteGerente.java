@@ -1,24 +1,22 @@
 
 public class TesteGerente {
 
-	public static void main(String[] args) {
-		// Construtor Default
-		Gerente gerente = new Gerente();
-		gerente.setNome("Fernanda Marques");
-		gerente.setCpf("077.158.329-01");
-		gerente.setSalario(5000.00);
-
-		System.out.println(gerente.getNome());
-		System.out.println(gerente.getCpf());
-		System.out.println(gerente.getSalario());
+	public static void main(String[] args) {		
+		Gerente g1 = new Gerente();
+		g1.setNome("Marco");
+		g1.setCpf("235568413");
+		g1.setSalario(5000.0);
 		
-		//Valida senha
-		gerente.setSenha(12345);
-		boolean autenticou = gerente.autentica(12345);
-
-		System.out.println("Deu certo? = " + autenticou);
+		System.out.println(g1.getNome());
+		System.out.println(g1.getCpf());
+		System.out.println(g1.getSalario());
 		
-		System.out.println(gerente.getBonificacao());
+		g1.setSenha(2222);
+		boolean autenticou = g1.autentica(2222);
+		
+		System.out.println(autenticou);
+		
+		System.out.println(g1.getBonificacao());
 
 	}
 

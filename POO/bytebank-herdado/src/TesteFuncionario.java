@@ -2,16 +2,13 @@
 public class TesteFuncionario {
 
 	public static void main(String[] args) {
+		Gerente nico = new Gerente();
+		nico.setNome("Nico Steppat");
+		nico.setCpf("223355646-9");
+		nico.setSalario(2600.00);
 
-		Funcionario funcionario = new Funcionario();
-		funcionario.setNome("Leonardo Boreiko");
-		funcionario.setCpf("037.313.879-21");
-		funcionario.setSalario(3000.0);
-		
-
-		System.out.println(" Olá, " + funcionario.getNome() + " seu salário somado com a bonificação será de R$ "
-				+ funcionario.getBonificacao());
-
+		System.out.println(nico.getNome());
+		System.out.println(nico.getBonificacao());
 	}
 
 }

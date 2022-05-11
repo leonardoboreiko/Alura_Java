@@ -1,24 +1,25 @@
-public class Gerente extends Funcionario {
-	// Atributos
+//Gerente eh um Funcionario, Gerente herda da class Funcionario, assina o contrato Autenticavel, eh um Autenticavel
+public class Gerente extends Funcionario implements Autenticavel {
 	private int senha;
-
-	// Métodos
-	public boolean autentica(int senha) {
-		if (this.senha == senha) {
-			return true;
-		} else {
-			return false;
-		}
-	}
-	//Getters and Setters
-	
-	public void setSenha(int senha) {
-		this.senha = senha;
-	}
-	
+		
 	public double getBonificacao() {
-		System.out.println("Chama o método do Gerente");
-		return super.getBonificacao() + 150;
+		System.out.println("Chamando o mÃ©todo de bonificacao do GERENTE");
+		return super.getSalario();
 	}
+
+	@Override
+    public void setSenha(int senha){
+        this.senha = senha;
+    }
+
+    @Override
+    public boolean autentica(int senha){
+
+        if(this.senha == senha){
+            return true;
+        } else {
+            return false;
+        }
+    }
 
 }
